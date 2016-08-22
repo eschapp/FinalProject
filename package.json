@@ -12,7 +12,9 @@
     "rethinkdb": "^2.3.2"
   },
   "main": "index.android.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "flow-bin": "^0.30.0"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

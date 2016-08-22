@@ -8,10 +8,10 @@ import {
   Picker,
 } from 'react-native';
 
-import StartPage from './src/StartPage.jsx';
+import StartPage from './StartPage.jsx';
 
 
-class Project extends Component {
+class AirChair extends React.Component {
 
   render() {
     return (
@@ -45,4 +45,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('Project', () => Project);
+AppRegistry.registerComponent('AirChair', () => AirChair);
