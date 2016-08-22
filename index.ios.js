@@ -3,23 +3,27 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View,
-  MapView,
-  Picker,
+  View
 } from 'react-native';
 
-import StartPage from './StartPage.jsx';
-
-
-class AirChair extends React.Component {
+import StartPage from './StartPage.js';
+import TimeframePicker from './Timeframe.js';
+import NeedWifi from './NeedWifi.js';
+class Project extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style={{
+        flex: 1,
+        marginTop: 20,
+        flexDirection: 'column',
+        justifyContent: 'center',
+        // alignItems: 'center'
+        }}>
         <StartPage />
-
-
-    </View>
+        <TimeframePicker />
+        <NeedWifi />
+      </View>
     );
   }
 
@@ -45,4 +49,4 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('AirChair', () => AirChair);
+AppRegistry.registerComponent('Project', () => Project);
