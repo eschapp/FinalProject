@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import {
+  AppRegistry,
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
 } from 'react-native'
 
-export default class StartPage extends React.Component {
+export default class NeedPrivacy extends React.Component {
 
   render() {
     return (
@@ -20,9 +21,9 @@ export default class StartPage extends React.Component {
           justifyContent: 'center',
           alignItems: 'center'
         }}>
-          <Text>Rent a desk</Text>
+          <Text>Privacy Please</Text>
           <Image
-          source={require('./images/interviewroom.png')}
+          source={require('./images/door.png')}
           />
         </View>
         <View style={{flex: 1,
@@ -32,10 +33,10 @@ export default class StartPage extends React.Component {
           alignItems: 'center'
           }}>
 
-          <Text>Host A Coworker</Text>
+          <Text>Open Format is Fine</Text>
 
           <Image
-          source={require('./images/deskforrent.png')}
+          source={require('./images/hierarchical-structure.png')}
           />
           </View>
       </View>

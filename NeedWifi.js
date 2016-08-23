@@ -4,8 +4,7 @@ import {
   StyleSheet,
   Text,
   View,
-  MapView,
-  Picker,
+  Image,
 } from 'react-native'
 
 export default class NeedWifi extends React.Component {
@@ -15,8 +14,31 @@ export default class NeedWifi extends React.Component {
 
       <View style={{flex: 1,
         }}>
-        <View style={{flex: 1, backgroundColor: 'powderblue'}}><Text>Wifi Needed</Text></View>
-        <View style={{flex: 1, backgroundColor: 'steelblue'}}><Text>I'll supply my own wifi!</Text></View>
+        <View style={{
+          flex: 1,
+          backgroundColor: 'powderblue',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center'
+        }}>
+          <Text>Wifi Needed</Text>
+          <Image
+          source={require('./images/wifi.png')}
+          />
+        </View>
+        <View style={{flex: 1,
+          backgroundColor: 'steelblue',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center'
+          }}>
+
+          <Text>I'll bring my own Wifi</Text>
+
+          <Image
+          source={require('./images/nowifi.png')}
+          />
+          </View>
       </View>
 
 

@@ -6,9 +6,11 @@ import {
   View
 } from 'react-native';
 
-import StartPage from './StartPage.js';
+import StartPage  from './StartPage.js';
 import TimeframePicker from './Timeframe.js';
 import NeedWifi from './NeedWifi.js';
+import NeedPrivacy from './NeedPrivacy.js';
+
 class Project extends Component {
 
   render() {
@@ -20,9 +22,10 @@ class Project extends Component {
         justifyContent: 'center',
         // alignItems: 'center'
         }}>
-        <StartPage />
-        <TimeframePicker />
-        <NeedWifi />
+        {/* <StartPage /> */}
+        {/* <TimeframePicker /> */}
+        {/* <NeedWifi /> */}
+        <NeedPrivacy />
       </View>
     );
   }
