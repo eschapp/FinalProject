@@ -10,6 +10,7 @@ import StartPage  from './StartPage.js';
 import TimeframePicker from './Timeframe.js';
 import NeedWifi from './NeedWifi.js';
 import NeedPrivacy from './NeedPrivacy.js';
+import Listings from './Listings.js'
 
 class Project extends Component {
 
@@ -25,7 +26,8 @@ class Project extends Component {
         {/* <StartPage /> */}
         {/* <TimeframePicker /> */}
         {/* <NeedWifi /> */}
-        <NeedPrivacy />
+        {/* <NeedPrivacy /> */}
+        <Listings />
       </View>
     );
   }
