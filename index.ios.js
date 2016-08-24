@@ -1,21 +1,23 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
 
-import StartPage  from './StartPage.js';
-import TimeframePicker from './Timeframe.js';
-import NeedWifi from './NeedWifi.js';
-import NeedPrivacy from './NeedPrivacy.js';
+import StartPage  from './StartPage.js'
+import TimeframePicker from './Timeframe.js'
+import NeedWifi from './NeedWifi.js'
+import NeedPrivacy from './NeedPrivacy.js'
 import Listings from './Listings.js'
+import Login from './Login.js'
 
 class Project extends Component {
 
   render() {
     return (
+
       <View style={{
         flex: 1,
         marginTop: 20,
@@ -23,13 +25,16 @@ class Project extends Component {
         justifyContent: 'center',
         // alignItems: 'center'
         }}>
+
         {/* <StartPage /> */}
         {/* <TimeframePicker /> */}
         {/* <NeedWifi /> */}
         {/* <NeedPrivacy /> */}
-        <Listings />
+        {/* <Listings /> */}
+        <Login />
+        
       </View>
-    );
+    )
   }
 
 }
@@ -52,6 +57,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+})
 
-AppRegistry.registerComponent('Project', () => Project);
+AppRegistry.registerComponent('Project', () => Project)
