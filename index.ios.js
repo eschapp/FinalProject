@@ -30,10 +30,10 @@ class Project extends Component {
         {/* <StartPage /> */}
         {/* <TimeframePicker /> */}
         {/* <NeedWifi /> */}
-        {/* <NeedPrivacy /> */}
+        <NeedPrivacy />
         {/* <Listings /> */}
         {/* <Login /> */}
-        <UserProfile />
+        {/* <UserProfile /> */}
 
       </View>
     )
