@@ -12,6 +12,7 @@ import NeedWifi from './NeedWifi.js'
 import NeedPrivacy from './NeedPrivacy.js'
 import Listings from './Listings.js'
 import Login from './Login.js'
+import UserProfile from './UserProfile.js'
 
 class Project extends Component {
 
@@ -31,8 +32,9 @@ class Project extends Component {
         {/* <NeedWifi /> */}
         {/* <NeedPrivacy /> */}
         {/* <Listings /> */}
-        <Login />
-        
+        {/* <Login /> */}
+        <UserProfile />
+
       </View>
     )
   }
