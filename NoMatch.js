@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
 import {
-  AppRegistry,
   StyleSheet,
   Text,
   View,
-  Image,
+  Image
 } from 'react-native'
 
-
-const TimeframeStyle = {
-  color: 'whitesmoke',
-  fontSize: 40,
-  fontWeight: 'bold'
-}
-
-export default class TimeframePicker extends React.Component {
+export default class NoMatch extends React.Component {
 
   render() {
     return (
@@ -28,7 +20,7 @@ export default class TimeframePicker extends React.Component {
           justifyContent: 'center',
           alignItems: 'center'
         }}>
-          <Text style={TimeframeStyle}>Today</Text>
+          <Text>NO MATCHES FOUND!</Text>
 
         </View>
         <View style={{flex: 1,
@@ -38,9 +30,10 @@ export default class TimeframePicker extends React.Component {
           alignItems: 'center'
           }}>
 
-          <Text style={TimeframeStyle}>Tomorrow</Text>
+          <Text>Host A Coworker</Text>
 
-        </View>
+
+          </View>
       </View>
 
 
