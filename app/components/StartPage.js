@@ -1,24 +1,29 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react'
 import {
-  NavigationExperimental,
   StyleSheet,
   Text,
   TouchableHighlight,
   View,
   Image
 } from 'react-native'
+import Button from './Button'
 
+const route = {
+  type: 'push',
+  route: {
+    key: 'timeframe',
+    title: 'timeframe'
+  }
+}
 
-export default class StartPage extends React.Component {
+const StartPage = ({_handleNavigate, _goBack}) => (
 
-  render() {
-    return (
-
-      <View style={{flex: 1,
-        }}>
+      <View style={{flex: 1}}>
+        <Button style={{flex: 1, marginBottom: 20}} onPress={_goBack} label='Go Back' />
+        <TouchableHighlight  onPress={() => _handleNavigate(route)} >
 
           <View style={{
-            flex: 1,
+            flex: 2,
             backgroundColor: 'powderblue',
             flexDirection: 'column',
             justifyContent: 'center',
@@ -29,8 +34,9 @@ export default class StartPage extends React.Component {
             source={require('./images/interviewroom.png')}
             />
           </View>
+        </TouchableHighlight>
 
-        <View style={{flex: 1,
+        <View style={{flex: 2,
           backgroundColor: 'steelblue',
           flexDirection: 'column',
           justifyContent: 'center',
@@ -44,9 +50,6 @@ export default class StartPage extends React.Component {
           />
           </View>
       </View>
+)
 
-
-    );
-  }
-
-}
+export default StartPage

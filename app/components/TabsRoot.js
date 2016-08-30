@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { TabBarIOS } from 'react-native'
 
-import Recipes from '../components/Recipes'
-import Samples from '../components/Samples'
+import StartPage from '../components/StartPage'
+import UserProfile from '../components/UserProfile'
 import Home from '../containers/navRootContainer'
 
 class Tabs extends Component {
@@ -14,10 +14,10 @@ class Tabs extends Component {
     switch (key) {
       case 'home':
         return <Home />
-      case 'recipes':
-        return <Recipes />
-      case 'samples':
-        return <Samples />
+      case 'start':
+        return <StartPage />
+      case 'profile':
+        return <UserProfile />
     }
   }
   render () {

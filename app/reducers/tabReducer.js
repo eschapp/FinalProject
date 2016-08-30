@@ -15,8 +15,8 @@ const recipeIcon = {
 
 const tabs = [
   { key: 'home', icon: homeIcon, title: 'Main' },
-  { key: 'recipes', icon: recipeIcon, title: 'Recipes' },
-  { key: 'samples', icon: sampleIcon, title: 'Samples' }
+  { key: 'start', icon: recipeIcon, title: 'DeskNomad' },
+  { key: 'profile', icon: sampleIcon, title: 'Profile' }
 ]
 
 const initialState = {

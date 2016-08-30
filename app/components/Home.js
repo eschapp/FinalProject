@@ -9,15 +9,15 @@ import Button from './Button'
 const route = {
   type: 'push',
   route: {
-    key: 'timeframe',
-    title: 'timeframe'
+    key: 'start',
+    title: 'start'
   }
 }
 
 const Home = ({_handleNavigate}) => (
   <View style={styles.container}>
     <Text style={styles.title}>Rent A Desk</Text>
-    <Button onPress={() => _handleNavigate(route)} label='timeframe' />
+    <Button onPress={() => _handleNavigate(route)} label='start' />
   </View>
 )
 
