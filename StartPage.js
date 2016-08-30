@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import {
+  Navigator,
   StyleSheet,
   Text,
+  TouchableHighlight,
   View,
   Image
 } from 'react-native'
-import {
-  Link,
-} from 'react-router-native'
+
 
 export default class StartPage extends React.Component {
 
@@ -16,12 +16,7 @@ export default class StartPage extends React.Component {
 
       <View style={{flex: 1,
         }}>
-        <Link
-          to="/timeframe"
-          style={styles.switcherLink}
-          activeStyle={styles.switcherLinkActive}
-          underlayColor="transparent"
-        >
+
           <View style={{
             flex: 1,
             backgroundColor: 'powderblue',
@@ -34,7 +29,6 @@ export default class StartPage extends React.Component {
             source={require('./images/interviewroom.png')}
             />
           </View>
-        </Link>
 
         <View style={{flex: 1,
           backgroundColor: 'steelblue',

@@ -64,3 +64,26 @@
 // })
 //
 // AppRegistry.registerComponent('Project', () => Project)
+
+
+import { AppRegistry, } from 'react-native'
+import React, { Component } from 'react'
+import routes from './Routes.js'
+import { Link } from 'react-router-native'
+
+import StartPage from './StartPage.js'
+
+class Project extends React.Component {
+
+  render() {
+    return (
+
+    <StartPage />
+
+    )
+  }
+
+}
+
+AppRegistry.registerComponent('Project', () => Project)
+// AppRegistry.registerComponent('Project', () => () => Project)
