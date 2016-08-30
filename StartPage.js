@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import {
-  Navigator,
+  NavigationExperimental,
   StyleSheet,
   Text,
   TouchableHighlight,

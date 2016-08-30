@@ -1,66 +1,15 @@
-import React, { Component } from 'react'
-import {
-  AppRegistry,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native'
+import React from 'react'
+import { AppRegistry } from 'react-native'
 
-import {DeskNomad} from './DeskNomad.js'
-import StartPage  from './StartPage.js'
-import TimeframePicker from './Timeframe.js'
-import NeedWifi from './NeedWifi.js'
-import NeedPrivacy from './NeedPrivacy.js'
-import Listings from './Listings.js'
-import Login from './Login.js'
-import UserProfile from './UserProfile.js'
+import configureStore from './app/store/configureStore'
+const store = configureStore()
 
-class Project extends Component {
+import TabsRootContainer from './app/containers/tabsRootContainer'
+import { Provider } from 'react-redux'
 
-  render() {
-    return (
-
-      <View style={{
-        flex: 1,
-        marginTop: 20,
-        flexDirection: 'column',
-        justifyContent: 'center',
-        // alignItems: 'center'
-        }}>
-
-        {/* <DeskNomad /> */}
-        {/* <StartPage /> */}
-        {/* <TimeframePicker /> */}
-        <NeedWifi />
-        {/* <NeedPrivacy /> */}
-        {/* <Listings /> */}
-        {/* <Login /> */}
-        {/* <UserProfile /> */}
-
-      </View>
-    )
-  }
-
-}
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-})
-
+const Project = () => (
+  <Provider store={store}>
+    <TabsRootContainer />
+  </Provider>
+)
 AppRegistry.registerComponent('Project', () => Project)
