@@ -38,13 +38,13 @@ class NavRoot extends Component {
               _handleNavigate={this._handleNavigate.bind(this)} />
     }
     if (route.key === 'timeframe') {
-      return <TimeframePicker _handleNavigate={this._handleNavigate.bind(this)}  />
+      return <TimeframePicker _goBack={this._handleBackAction.bind(this)} _handleNavigate={this._handleNavigate.bind(this)}  />
     }
     if (route.key === 'about') {
      return <About _goBack={this._handleBackAction.bind(this)} />
     }
     if (route.key === 'privacy') {
-      return <NeedPrivacy _goBack={this._handleBackAction.bind(this)} />
+      return <NeedPrivacy _goBack={this._handleBackAction.bind(this)} _handleNavigate={this._handleNavigate.bind(this)} />
     }
     if (route.key === 'wifi') {
       return <NeedWifi _goBack={this._handleBackAction.bind(this)} />
@@ -56,7 +56,7 @@ class NavRoot extends Component {
       return <PaymentInfo _goBack={this._handleBackAction.bind(this)} />
     }
     if (route.key === 'start') {
-      return <StartPage _goBack={this._handleBackAction.bind(this)} />
+      return <StartPage _goBack={this._handleBackAction.bind(this)} _handleNavigate={this._handleNavigate.bind(this)} />
     }
     if (route.key === 'profile') {
       return <UserProfile _goBack={this._handleBackAction.bind(this)} />

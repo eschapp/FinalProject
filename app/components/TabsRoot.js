@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { TabBarIOS } from 'react-native'
 
-import StartPage from '../components/StartPage'
+import NeedPrivacy from '../components/NeedPrivacy'
 import UserProfile from '../components/UserProfile'
 import Home from '../containers/navRootContainer'
 
@@ -15,9 +15,28 @@ class Tabs extends Component {
       case 'home':
         return <Home />
       case 'start':
-        return <StartPage />
+        return <NeedPrivacy />
       case 'profile':
         return <UserProfile />
+    }
+  }
+  _handleBackAction () {
+    if (this.props.navigation.index === 0) {
+      return false
+    }
+    this.props.popRoute()
+    return true
+  }
+  _handleNavigate (action) {
+    switch (action && action.type) {
+      case 'push':
+        this.props.pushRoute(action.route)
+        return true
+      case 'back':
+      case 'pop':
+        return this._handleBackAction()
+      default:
+        return false
     }
   }
   render () {
